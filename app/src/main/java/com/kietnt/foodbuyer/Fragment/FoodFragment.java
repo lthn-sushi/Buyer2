@@ -30,7 +30,7 @@ public class FoodFragment extends Fragment {
     TextView tv_tenLoai;
     ImageView iv_back;
     FoodDAO foodDAO;
-    CounterFab counter_fab;
+    public static CounterFab counter_fab;
     public static DatabaseReference mDataFood;
     public static MyFoodsAdapter foodsAdapter;
     ArrayList<Food> ds_food;

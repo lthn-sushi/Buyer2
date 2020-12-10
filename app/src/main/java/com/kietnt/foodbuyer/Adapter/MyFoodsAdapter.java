@@ -29,6 +29,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import static com.kietnt.foodbuyer.Fragment.FoodFragment.counter_fab;
+
 public class MyFoodsAdapter extends RecyclerView.Adapter<MyFoodsAdapter.MyViewHolder> {
     Context context;
     ArrayList<Food> list_food;
@@ -114,11 +116,10 @@ public class MyFoodsAdapter extends RecyclerView.Adapter<MyFoodsAdapter.MyViewHo
                         mDataCart.child(key).setValue(cart);
 
                         Toast.makeText(context, "Đã thêm vào giỏ hàng", Toast.LENGTH_SHORT).show();
+                        counter_fab.increase();
                         alertDialog1.cancel();
                     }
                 });
-
-
             }
         });
 

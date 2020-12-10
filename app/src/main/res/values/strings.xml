@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">King Fresh</string>
+    <string name="app_name">Buyer</string>
 
     <string name="btn_changepass">Đổi mật khẩu</string>
     <string name="btn_signout">Đăng xuất</string>
